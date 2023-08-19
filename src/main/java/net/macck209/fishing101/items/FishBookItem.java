@@ -145,7 +145,7 @@ builder.addPage(
 );
 builder.addPage(
     Text.literal("   十二月1日，1878年\n\n"),
-    Text.literal("红树梅鱼\n").formatted(Formatting.BOLD),
+    Text.literal("银纹笛鲷\n").formatted(Formatting.BOLD),
     Text.literal("- 目：鲈形目（Perciformes）\n" +
         "- 分布：红树林水域\n" +
         "- 可以烟熏")
