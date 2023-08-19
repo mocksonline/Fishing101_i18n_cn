@@ -98,7 +98,7 @@ public class MealBookItem extends Item implements PolymerItem {
         Text.literal("在熔炉中烹饪面团")
         );
         builder.addPage(
-        Text.literal("米饭\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
+        Text.literal("大米\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
         Text.literal("获取方式\n").formatted(Formatting.UNDERLINE),
         Text.literal("在樱花林的草丛中发现")
         );
