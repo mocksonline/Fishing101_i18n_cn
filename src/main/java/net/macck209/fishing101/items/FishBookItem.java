@@ -73,172 +73,173 @@ public class FishBookItem extends Item implements PolymerItem {
         var builder = new BookElementBuilder();
         FishGui.BOOKS.clear();
 
+builder.addPage(
+    Text.literal("   十月12日，1878年\n"),
+    Text.literal("我的名字是Finn Benthos。本日志的页面将记录我在未知航程中遇到的有趣海洋生物。我的目标是揭开水域中隐藏的神秘。")
+);
+builder.addPage(
+    Text.literal("   十月13日，1878年\n\n"),
+    Text.literal("鲤鱼\n").formatted(Formatting.BOLD),
+    Text.literal("- 目：鲤形目（Cypriniformes）\n" +
+        "- 分布：淡水\n" +
+        "- 可以烟熏")
+);
+builder.addPage(
+    Text.literal("   十月13日，1878年\n\n"),
+    Text.literal("畸形鲤鱼\n").formatted(Formatting.BOLD),
+    Text.literal("- 目：鲤形目（Cypriniformes）\n" +
+        "- 分布：淡水\n" +
+        "- 可以烟熏")
+);
+builder.addPage(
+    Text.literal("   十月14日，1878年\n\n"),
+    Text.literal("发光鲤鱼\n").formatted(Formatting.BOLD),
+    Text.literal("- 目：鲤形目（Cypriniformes）\n" +
+        "- 分布：淡水；黄昏后\n" +
+        "- 可以烟熏\n" +
+        "- 特殊效果：发光")
+);
+builder.addPage(
+    Text.literal("   十月14日，1878年\n\n"),
+    Text.literal("鲶鱼\n").formatted(Formatting.BOLD),
+    Text.literal("- 目：鲶形目（Siluriformes）\n" +
+        "- 分布：淡水\n" +
+        "- 可以烟熏")
+);
+builder.addPage(
+    Text.literal("   十月16日，1878年\n\n"),
+    Text.literal("泥鲶鱼\n").formatted(Formatting.BOLD),
+    Text.literal("- 目：鲶形目（Siluriformes）\n" +
+        "- 分布：混浊的沼泽水域\n" +
+        "- 可以烟熏")
+);
+builder.addPage(
+    Text.literal("   十月24日，1878年\n\n"),
+    Text.literal("热带鲶鱼\n").formatted(Formatting.BOLD),
+    Text.literal("- 目：鲶形目（Siluriformes）\n" +
+        "- 分布：热带水域\n" +
+        "- 可以烟熏")
+);
+builder.addPage(
+    Text.literal("   十一月8日，1878年\n\n"),
+    Text.literal("神圣鲶鱼\n").formatted(Formatting.BOLD),
+    Text.literal("- 目：鲶形目（Siluriformes）\n" +
+        "- 分布：淡水；罕见，但下雨时更常见\n" +
+        "- 可以烟熏\n" +
+        "- 特殊效果：升天")
+);
+builder.addPage(
+    Text.literal("   十一月22日，1878年\n\n"),
+    Text.literal("鲭鱼\n").formatted(Formatting.BOLD),
+    Text.literal("- 目：鲈形目（Perciformes）\n" +
+        "- 分布：海水\n" +
+        "- 可以烟熏")
+);
+builder.addPage(
+    Text.literal("   十一月27日，1878年\n\n"),
+    Text.literal("发光鲭鱼\n").formatted(Formatting.BOLD),
+    Text.literal("- 目：鲈形目（Perciformes）\n" +
+        "- 分布：海水；黄昏后\n" +
+        "- 可以烟熏\n" +
+        "- 特殊效果：发光")
+);
+builder.addPage(
+    Text.literal("   十二月1日，1878年\n\n"),
+    Text.literal("红树梅鱼\n").formatted(Formatting.BOLD),
+    Text.literal("- 目：鲈形目（Perciformes）\n" +
+        "- 分布：红树林水域\n" +
+        "- 可以烟熏")
+);
         builder.addPage(
-                //Text.translatable("books.fishing101.fish_book.intro")
-                Text.literal("   October 12, 1878\n"),
-                Text.literal("My name is Finn Benthos. " +
-                        "The pages of this journal shall document the intriguing marine creatures I encounter throughout my voyage into the unknown. " +
-                        "My aim is to unravel the mysteries concealed within the watery realm.")
-        );
-        builder.addPage(
-                Text.literal("   October 13, 1878\n\n"),
-                Text.literal("Carp\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Cypriniformes\n"+
-                        "- Distribution: Freshwater\n"+
-                        "- Can be smoked")
-        );
-        builder.addPage(
-                Text.literal("   October 13, 1878\n\n"),
-                Text.literal("Deformed Carp\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Cypriniformes\n" +
-                        "- Distribution: Freshwater\n" +
-                        "- Can be smoked")
-        );
-        builder.addPage(
-                Text.literal("   October 14, 1878\n\n"),
-                Text.literal("Luminous Carp\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Cypriniformes\n" +
-                        "- Distribution: Freshwater; after dusk\n" +
-                        "- Can be smoked\n" +
-                        "- Special effects: Luminousness")
-        );
-        builder.addPage(
-                Text.literal("   October 14, 1878\n\n"),
-                Text.literal("Catfish\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Siluriformes\n" +
-                        "- Distribution: Freshwater\n"+
-                        "- Can be smoked")
-        );
-        builder.addPage(
-                Text.literal("   October 16, 1878\n\n"),
-                Text.literal("Muddy Catfish\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Siluriformes\n" +
-                        "- Distribution: Murky swamp waters\n" +
-                        "- Can be smoked")
-        );
-        builder.addPage(
-                Text.literal("   October 24, 1878\n\n"),
-                Text.literal("Tropical Catfish\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Siluriformes\n" +
-                        "- Distribution: Tropical waters\n" +
-                        "- Can be smoked")
-        );
-        builder.addPage(
-                Text.literal("   November 8, 1878\n\n"),
-                Text.literal("Divine Catfish\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Siluriformes\n" +
-                        "- Distribution: Freshwater; rare, but much more common when raining\n" +
-                        "- Can be smoked\n" +
-                        "- Special effects: Ascension")
-        );
-        builder.addPage(
-                Text.literal("   November 22, 1878\n\n"),
-                Text.literal("Mackerel\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Perciformes\n" +
-                        "- Distribution: Saltwater\n"+
-                        "- Can be smoked")
-        );
-        builder.addPage(
-                Text.literal("   November 27, 1878\n\n"),
-                Text.literal("Luminous Mackerel\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Perciformes\n" +
-                        "- Distribution: Saltwater; after dusk\n" +
-                        "- Can be smoked\n" +
-                        "- Special effects: Luminousness")
-        );
-        builder.addPage(
-                Text.literal("   December 1, 1878\n\n"),
-                Text.literal("Mangrove Jack\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Perciformes\n" +
-                        "- Distribution: Mangrove waters\n" +
-                        "- Can be smoked")
-        );
-        builder.addPage(
-                Text.literal("   December 7, 1878\n\n"),
-                Text.literal("Shrimp\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Decapoda\n" +
-                        "- Distribution: Saltwater\n"+
-                        "- Can be smoked")
-        );
-        builder.addPage(
-                Text.literal("   December 14, 1878\n\n"),
-                Text.literal("Luminous Shrimp\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Decapoda\n" +
-                        "- Distribution: Saltwater; after dusk\n"+
-                        "- Can be smoked\n"+
-                        "- Special effects: Luminousness")
-        );
-        builder.addPage(
-                Text.literal("   December 15, 1878\n\n"),
-                Text.literal("Jellyfish\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Semaeostomeae\n" +
-                        "- Distribution: Saltwater\n"+
-                        "- Potential allergic reaction")
-        );
-        builder.addPage(
-                Text.literal("   January 7, 1879\n\n"),
-                Text.literal("Divine Jellyfish\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Semaeostomeae\n" +
-                        "- Distribution: Saltwater; rare, but much more common when raining\n"+
-                        "- Special effects: Ascension")
-        );
-        builder.addPage(
-                Text.literal("   January 9, 1879\n\n"),
-                Text.literal("Anglerfish\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Lophiiformes\n" +
-                        "- Distribution: Absolute darkness in deepest of caves; more common in the Ancient Cities\n" +
-                        "- Can be smoked\n" +
-                        "- Often causes nausea")
-        );
-        builder.addPage(
-                Text.literal("   March 30, 1879\n\n"),
-                Text.literal("Red Koi\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Cypriniformes\n" +
-                        "- Distribution: Cherry groves\n" +
-                        "- Can be smoked" )
-        );
-        builder.addPage(
-                Text.literal("   April 2, 1879\n\n"),
-                Text.literal("Yellow Koi\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Cypriniformes\n" +
-                        "- Distribution: Cherry groves\n" +
-                        "- Can be smoked" )
-        );
-        builder.addPage(
-                Text.literal("   June 19, 1879\n\n"),
-                Text.literal("Thunderfin\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Fulmeniformes\n" +
-                        "- Distribution: Electrified waters\n" +
-                        "- It appears to have some unusual attributes when charged with copper" )
-        );
-        builder.addPage(
-                Text.literal("   July 25, 1879\n\n"),
-                Text.literal("Starfish\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Paxillosida\n" +
-                        "- Distribution: Saltwater\n" +
-                        "- Makes a great shashlik" )
-        );
-        builder.addPage(
-                Text.literal("   July 13, 1879\n\n"),
-                Text.literal("Ice Cod\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Gadiformes\n" +
-                        "- Distribution: Found under glaciers\n" +
-                        "- It's REALLY cold" )
-        );
-        builder.addPage(
-                Text.literal("   July XX, 19XX\n\n"),
-                Text.literal("End Jellyfish\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Semaeostomeae???\n" +
-                        "- Distribution: Where am I?\n"+
-                        "- Potential allergic reaction")
-        );
-        builder.addPage(
-                Text.literal("   July XX, 19XX\n\n"),
-                Text.literal("End Starfish\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Paxillosida???\n" +
-                        "- Distribution: I'm starting to get worried...\n" +
-                        "- No idea if it's edible, but I'm not gonna be the one to try it" )
-        );
+    Text.literal("   十二月7日，1878年\n\n"),
+    Text.literal("虾\n").formatted(Formatting.BOLD),
+    Text.literal("- 目：十足目（Decapoda）\n" +
+        "- 分布：海水\n" +
+        "- 可以烟熏")
+);
+builder.addPage(
+    Text.literal("   十二月14日，1878年\n\n"),
+    Text.literal("发光虾\n").formatted(Formatting.BOLD),
+    Text.literal("- 目：十足目（Decapoda）\n" +
+        "- 分布：海水；黄昏后\n" +
+        "- 可以烟熏\n" +
+        "- 特殊效果：发光")
+);
+builder.addPage(
+    Text.literal("   十二月15日，1878年\n\n"),
+    Text.literal("水母\n").formatted(Formatting.BOLD),
+    Text.literal("- 目：半口形目（Semaeostomeae）\n" +
+        "- 分布：海水\n" +
+        "- 可能引发过敏反应")
+);
+builder.addPage(
+    Text.literal("   一月7日，1879年\n\n"),
+    Text.literal("神圣水母\n").formatted(Formatting.BOLD),
+    Text.literal("- 目：半口形目（Semaeostomeae）\n" +
+        "- 分布：海水；罕见，但下雨时更常见\n" +
+        "- 特殊效果：升天")
+);
+builder.addPage(
+    Text.literal("   一月9日，1879年\n\n"),
+    Text.literal("深海鮟鱇\n").formatted(Formatting.BOLD),
+    Text.literal("- 目：鮟鱇目（Lophiiformes）\n" +
+        "- 分布：最深的洞穴中的绝对黑暗；在古代城市中更常见\n" +
+        "- 可以烟熏\n" +
+        "- 常引起恶心")
+);
+builder.addPage(
+    Text.literal("   三月30日，1879年\n\n"),
+    Text.literal("红色锦鲤\n").formatted(Formatting.BOLD),
+    Text.literal("- 目：鲤形目（Cypriniformes）\n" +
+        "- 分布：樱花林\n" +
+        "- 可以烟熏")
+);
+builder.addPage(
+    Text.literal("   四月2日，1879年\n\n"),
+    Text.literal("黄色锦鲤\n").formatted(Formatting.BOLD),
+    Text.literal("- 目：鲤形目（Cypriniformes）\n" +
+        "- 分布：樱花林\n" +
+        "- 可以烟熏")
+);
+builder.addPage(
+    Text.literal("   六月19日，1879年\n\n"),
+    Text.literal("雷鳍鱼\n").formatted(Formatting.BOLD),
+    Text.literal("- 目：电鱼目（Fulmeniformes）\n" +
+        "- 分布：带电水域\n" +
+        "- 当与铜接触时，似乎具有一些异常属性")
+);
+builder.addPage(
+    Text.literal("   七月25日，1879年\n\n"),
+    Text.literal("海星\n").formatted(Formatting.BOLD),
+    Text.literal("- 目：腕足目（Paxillosida）\n" +
+        "- 分布：海水\n" +
+        "- 适合制作沙什里克")
+);
+        
+builder.addPage(
+    Text.literal("   七月13日，1879年\n\n"),
+    Text.literal("冰鳕鱼\n").formatted(Formatting.BOLD),
+    Text.literal("- 目：鳕形目（Gadiformes）\n" +
+        "- 分布：冰川下\n" +
+        "- 真的非常冷"
+    )
+);
+builder.addPage(
+    Text.literal("   七月XX日，19XX年\n\n"),
+    Text.literal("末地水母\n").formatted(Formatting.BOLD),
+    Text.literal("- 目：半口形目???（Semaeostomeae）\n" +
+        "- 分布：我在哪里？\n" +
+        "- 可能引发过敏反应"
+    )
+);
+builder.addPage(
+    Text.literal("   七月XX日，19XX年\n\n"),
+    Text.literal("末地海星\n").formatted(Formatting.BOLD),
+    Text.literal("- 目：腕足目???（Paxillosida）\n" +
+        "- 分布：我开始感到担心...\n" +
+        "- 不知道它是否可食用，但我不会尝试"
+    )
+);
 
         IndexGui.book = builder.asStack();
     }
