@@ -35,7 +35,7 @@ public class MealBookItem extends Item implements PolymerItem {
 
     @Override
     public Text getName(ItemStack stack) {
-        return Text.translatable("Johnny's Cook Book");
+        return Text.translatable("Johnny的烹饪书");
     }
     @Override
     public Item getPolymerItem(ItemStack itemStack, @Nullable ServerPlayerEntity player) {
@@ -74,101 +74,83 @@ public class MealBookItem extends Item implements PolymerItem {
         FishGui.BOOKS.clear();
 
         builder.addPage(
-                //Text.translatable("books.fishing101.meal_book.intro") <- todo in future
-                Text.literal("  Introduction\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
-                Text.literal( "Welcome to my culinary odyssey! " +
-                        "Join me in unraveling the secrets of exquisite flavors as we delve into the art of cooking. " +
-                        "Let's create delicious masterpieces together. " +
-                        "Bon appétit!")
+        Text.literal(" 介绍\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
+        Text.literal("欢迎来到我的烹饪之旅！加入我一起揭开精致味道的秘密，深入烹饪艺术的世界。让我们一起创造美味的杰作。祝您用餐愉快!")
         );
         builder.addPage(
-                Text.literal("Bone Meal\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
-                Text.literal("Recipe\n").formatted(Formatting.UNDERLINE),
-                Text.literal( "Made from Fish Bones")
+        Text.literal("骨粉\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
+        Text.literal("配方\n").formatted(Formatting.UNDERLINE),
+        Text.literal("由鱼骨制成")
         );
         builder.addPage(
-                Text.literal("Slimeball\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
-                Text.literal("Recipe\n").formatted(Formatting.UNDERLINE),
-                Text.literal( "- Thick Goo\n" +
-                        "- Green Dye")
+        Text.literal("粘液球\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
+        Text.literal("配方\n").formatted(Formatting.UNDERLINE),
+        Text.literal("- 浓稠的黏液\n- 绿色染料")
         );
         builder.addPage(
-                Text.literal("Dough\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
-                Text.literal("Recipe\n").formatted(Formatting.UNDERLINE),
-                Text.literal( "- Wheat\n"+
-                        "- Egg")
+        Text.literal("面团\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
+        Text.literal("配方\n").formatted(Formatting.UNDERLINE),
+        Text.literal("- 小麦\n- 鸡蛋")
         );
         builder.addPage(
-                Text.literal("Noodles\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
-                Text.literal("Recipe\n").formatted(Formatting.UNDERLINE),
-                Text.literal("Cook a Dough in a Furnace")
+        Text.literal("面条\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
+        Text.literal("配方\n").formatted(Formatting.UNDERLINE),
+        Text.literal("在熔炉中烹饪面团")
         );
         builder.addPage(
-                Text.literal("Rice\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
-                Text.literal("Obtaining\n").formatted(Formatting.UNDERLINE),
-                Text.literal( "Found among Grass in Cherry Groves")
+        Text.literal("米饭\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
+        Text.literal("获取方式\n").formatted(Formatting.UNDERLINE),
+        Text.literal("在樱花林的草丛中发现")
         );
         builder.addPage(
-                Text.literal("Tentacle\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
-                Text.literal("Obtaining\n").formatted(Formatting.UNDERLINE),
-                Text.literal("Chop 'em, those Squids!")
+        Text.literal("鱿鱼须").formatted(Formatting.BOLD,Formatting.GOLD),
+        Text.literal("获取方式\n").formatted(Formatting.UNDERLINE),
+        Text.literal("砍鱿鱼")
         );
         builder.addPage(
-                Text.literal("Cooked Tentacle\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
-                Text.literal("Recipe\n").formatted(Formatting.UNDERLINE),
-                Text.literal("Cook a Tentacle in a Furnace")
+        Text.literal("熟鱿鱼须").formatted(Formatting.BOLD,Formatting.GOLD),
+        Text.literal("配方\n").formatted(Formatting.UNDERLINE),
+        Text.literal("在熔炉中烹饪鱿鱼须")
         );
         builder.addPage(
-                Text.literal("Chicken Broth\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
-                Text.literal("Recipe\n").formatted(Formatting.UNDERLINE),
-                Text.literal( "- Bowl\n" +
-                        "- Noodles\n"+
-                        "- Raw Chicken")
+        Text.literal("鸡汤\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
+        Text.literal("配方\n").formatted(Formatting.UNDERLINE),
+        Text.literal("- 碗\n- 面条\n- 生鸡肉")
         );
         builder.addPage(
-                Text.literal("Purple Pasta\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
-                Text.literal("Recipe\n").formatted(Formatting.UNDERLINE),
-                Text.literal( "- Bowl\n" +
-                        "- Noodles\n"+
-                        "- Cooked Porkchop\n"+
-                        "- Chorus Fruit")
+        Text.literal("紫色意面\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
+        Text.literal("配方\n").formatted(Formatting.UNDERLINE),
+        Text.literal("- 碗\n- 面条\n- 熟猪排\n- 紫颂果")
         );
         builder.addPage(
-                Text.literal("Spaghetti Frutti di Mare\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
-                Text.literal("Recipe\n").formatted(Formatting.UNDERLINE),
-                Text.literal( "- Bowl\n" +
-                        "- Noodles\n"+
-                        "- Cooked Tentacle\n"+
-                        "- Any Smoked Shrimp")
+        Text.literal("海鲜意面\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
+        Text.literal("配方\n").formatted(Formatting.UNDERLINE),
+        Text.literal("- 碗\n- 面条\n- 熟鱿鱼须\n- 任何熏制的虾")
         );
         builder.addPage(
-                Text.literal("Starfish Shashlik\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
-                Text.literal("Recipe\n").formatted(Formatting.UNDERLINE),
-                Text.literal("- Starfish\n"+
-                        "- Stick")
+        Text.literal("海星烤肉串\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
+        Text.literal("配方\n").formatted(Formatting.UNDERLINE),
+        Text.literal("- 海星\n- 木棍")
         );
         builder.addPage(
-                Text.literal("End Starfish Shashlik\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
-                Text.literal("Recipe\n").formatted(Formatting.UNDERLINE),
-                Text.literal("- End Starfish\n"+
-                        "- Stick")
+        Text.literal("末地海星烤肉串\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
+        Text.literal("配方\n").formatted(Formatting.UNDERLINE),
+        Text.literal("- 末地海星\n- 木棍")
         );
         builder.addPage(
-                Text.literal("Sushi\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
-                Text.literal("Recipe\n").formatted(Formatting.UNDERLINE),
-                Text.literal("- Rice\n" +
-                        "- Kelp\n"+
-                        "- Raw Salmon")
+        Text.literal("寿司\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
+        Text.literal("配方\n").formatted(Formatting.UNDERLINE),
+        Text.literal("- 米饭\n- 海带\n- 生鲑鱼")
         );
         builder.addPage(
-                Text.literal("Thick Goo\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
-                Text.literal("Recipe\n").formatted(Formatting.UNDERLINE),
-                Text.literal("Cook a Jellyfish or an End Jellyfish in a Furnace or a Campfire")
+        Text.literal("浓稠的黏液\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
+        Text.literal("配方\n").formatted(Formatting.UNDERLINE),
+        Text.literal("在熔炉或篝火中烹饪水母或末地水母")
         );
         builder.addPage(
-                Text.literal("Charged Thunderfin\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
-                Text.literal("Recipe\n").formatted(Formatting.UNDERLINE),
-                Text.literal("Charge a Thunderfin in a Smithing Table with 2 Copper Blocks")
+        Text.literal("充能雷鳍鱼\n\n").formatted(Formatting.BOLD,Formatting.GOLD),
+        Text.literal("配方\n").formatted(Formatting.UNDERLINE),
+        Text.literal("在锻造台中用2个铜块给雷鳍鱼充能")
         );
 
         IndexGui.book = builder.asStack();
